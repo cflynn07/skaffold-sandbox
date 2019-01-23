@@ -1,0 +1,9 @@
+apiVersion: skaffold/v1beta2
+kind: Config
+build:
+  artifacts:
+  - image: docker.io/cflynnus/skaffold-sandbox
+deploy:
+  kubectl:
+    manifests:
+    - k8s-pod.yaml
